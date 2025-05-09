@@ -1,0 +1,40 @@
+const cu1 = document.getElementById("c1");
+const cu2 = document.getElementById("c2");
+const cu3 = document.getElementById("c3");
+const cu4 = document.getElementById("c4");
+const cu5 = document.getElementById("c5");
+const cu6 = document.getElementById("c6");
+const cu7 = document.getElementById("c7");
+const cu8 = document.getElementById("c8");
+const cu9 = document.getElementById("c9");
+const cu10 = document.getElementById("c10");
+const cu11 = document.getElementById("c11");
+const cu12 = document.getElementById("c12");
+const cu13 = document.getElementById("c13");
+const cu14 = document.getElementById("c14");
+const cu15 = document.getElementById("c15");
+const cu16 = document.getElementById("c16");
+const cu17 = document.getElementById("c17");
+const cu18 = document.getElementById("c18");
+
+export let cr1 = cu1.value;
+export let cr2 = cu2.value;
+export let cr3 = cu3.value;
+export let cr4 = cu4.value;
+export let cr5 = cu5.value;
+export let cr6 = cu6.value;
+export let cr7 = cu7.value;
+export let cr8 = cu8.value;
+export let cr9 = cu9.value;
+export let cr10 = cu10.value;
+export let cr11 = cu11.value;
+export let cr12 = cu12.value;
+export let cr13 = cu13.value;
+export let cr14 = cu14.value;
+export let cr15= cu15.value;
+export let cr16 = cu16.value;
+export let cr17 = cu17.value;
+export let cr18 = cu18.value;
+
+console.log(cr1+cr2+cr3+cr4+cr5+cr6+cr7+cr8+cr9+cr10+cr11+cr12+cr13+cr14+cr15+cr16+cr17+cr18);
+
