@@ -15,7 +15,7 @@ async function noasignados(){
         tabl.innerHTML = "";
         hq.forEach(c => {
             console.log(c.data());
-            tabl.innerHTML = `
+            tabl.innerHTML += `
             <tr>
                 <td>${c.data().nombre}</td>
                 <td>${c.data().correo}</td>
