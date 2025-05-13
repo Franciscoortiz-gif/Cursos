@@ -1,0 +1,384 @@
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+  input[type=number] { -moz-appearance:textfield; }
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #424242 inset;
+}
+input:-webkit-autofill {
+  -webkit-text-fill-color: #ffffff;
+}
+
+
+.nombre{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+    font-size: 20px;
+    background-color: rgba(184, 184, 184, 0.151);
+    color: aliceblue;
+    border: transparent;
+    border-radius: 3px;
+    transition: all 350ms;
+    outline: none;
+}
+.nombre:hover{
+    background-color: rgba(184, 184, 184, 0.24);
+    border-bottom: 2px solid rgb(161, 161, 161);
+}
+
+.nombre ~ label{
+    display: flex;
+    position: absolute;
+    top: 30%;
+    left: 2%;
+    color: aliceblue;
+    transition: all 350ms;
+}
+.nombre:focus, .nombre:valid{
+   background-color: rgba(184, 184, 184, 0.24);
+    border-bottom: 2px solid rgb(0, 102, 255); 
+}
+.nombre:focus ~ label, .nombre:valid ~ label{
+    display: flex;
+    position: absolute;
+    top: 0%;
+    left: 2%;
+    color: aliceblue;
+    font-size: 12px;
+}
+.edad{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+    font-size: 20px;
+    background-color: rgba(184, 184, 184, 0.151);
+    color: aliceblue;
+    border: transparent;
+    border-radius: 3px;
+    transition: all 350ms;
+    outline: none;
+}
+.edad:hover{
+    background-color: rgba(184, 184, 184, 0.24);
+    border-bottom: 2px solid rgb(161, 161, 161);
+}
+
+.edad ~ label{
+    display: flex;
+    position: absolute;
+    top: 30%;
+    left: 2%;
+    color: aliceblue;
+    transition: all 350ms;
+}
+.edad:focus, .edad:valid{
+   background-color: rgba(184, 184, 184, 0.24);
+    border-bottom: 2px solid rgb(0, 102, 255); 
+}
+.edad:focus ~ label, .edad:valid ~ label{
+    display: flex;
+    position: absolute;
+    top: 0%;
+    left: 2%;
+    color: aliceblue;
+    font-size: 12px;
+}
+.correo{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+    font-size: 20px;
+    background-color: rgba(184, 184, 184, 0.151);
+    color: aliceblue;
+    border: transparent;
+    border-radius: 3px;
+    transition: all 350ms;
+    outline: none;
+}
+.correo:hover{
+    background-color: rgba(184, 184, 184, 0.24);
+    border-bottom: 2px solid rgb(161, 161, 161);
+}
+
+.correo ~ label{
+    display: flex;
+    position: absolute;
+    top: 30%;
+    left: 2%;
+    color: aliceblue;
+    transition: all 350ms;
+}
+.correo:focus, .correo:valid{
+   background-color: rgba(184, 184, 184, 0.24);
+    border-bottom: 2px solid rgb(0, 102, 255); 
+}
+.correo:focus ~ label, .correo:valid ~ label{
+    display: flex;
+    position: absolute;
+    top: 0%;
+    left: 2%;
+    color: aliceblue;
+    font-size: 12px;
+}
+
+.telef{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+    font-size: 20px;
+    background-color: rgba(184, 184, 184, 0.151);
+    color: aliceblue;
+    border: transparent;
+    border-radius: 3px;
+    transition: all 350ms;
+    outline: none;
+}
+.telef:hover{
+    background-color: rgba(184, 184, 184, 0.24);
+    border-bottom: 2px solid rgb(161, 161, 161);
+}
+
+.telef ~ label{
+    display: flex;
+    position: absolute;
+    top: 30%;
+    left: 2%;
+    color: aliceblue;
+    transition: all 350ms;
+}
+.telef:focus, .telef:valid{
+   background-color: rgba(184, 184, 184, 0.24);
+    border-bottom: 2px solid rgb(0, 102, 255); 
+}
+.telef:focus ~ label, .telef:valid ~ label{
+    display: flex;
+    position: absolute;
+    top: 0%;
+    left: 2%;
+    color: aliceblue;
+    font-size: 12px;
+}
+.ciud{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+    font-size: 20px;
+    background-color: rgba(184, 184, 184, 0.151);
+    color: aliceblue;
+    border: transparent;
+    border-radius: 3px;
+    transition: all 350ms;
+    outline: none;
+}
+.ciud:hover{
+    background-color: rgba(184, 184, 184, 0.24);
+    border-bottom: 2px solid rgb(161, 161, 161);
+}
+
+.ciud ~ label{
+    display: flex;
+    position: absolute;
+    top: 30%;
+    left: 2%;
+    color: aliceblue;
+    transition: all 350ms;
+}
+.ciud:focus, .ciud:valid{
+   background-color: rgba(184, 184, 184, 0.24);
+    border-bottom: 2px solid rgb(0, 102, 255); 
+}
+.ciud:focus ~ label, .ciud:valid ~ label{
+    display: flex;
+    position: absolute;
+    top: 0%;
+    left: 2%;
+    color: aliceblue;
+    font-size: 12px;
+}
+.cursel{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+    font-size: 16px;
+    background-color: rgb(46, 46, 46);
+    color: aliceblue;
+    border: transparent;
+    border-radius: 3px;
+    transition: all 350ms;
+    outline: none;
+}
+.cursel:hover{
+    background-color: rgba(184, 184, 184, 0.24);
+    border-bottom: 2px solid rgb(161, 161, 161);
+}
+.cursel:focus{
+   background-color: rgba(184, 184, 184, 0.24);
+    border: 2px solid rgb(0, 102, 255); 
+}
+option{
+    background-color:rgb(46, 46, 46);
+    color: rgb(246, 251, 255);
+    transition: all 350ms;
+}
+.sd{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.env{
+    margin-top: 20px;
+    width: 300px;
+    height: 50px;
+    background-color: rgb(43, 165, 235);
+    color: aliceblue;
+    font-size: 20px;
+    border-radius: 6px;
+    outline: none;
+    border: 2px solid rgb(2, 1, 12);
+    transition: all 350ms;
+}
+.env:hover{
+    border: 2px solid rgb(154, 231, 255);
+    background-color: rgb(61, 178, 255);
+}
+.env:focus{
+    border: 2px solid rgb(96, 218, 255);
+    background-color: rgb(35, 152, 230);
+}
+@media(min-width: 601px){
+    .nombre ~ label{
+        display: flex;
+        position: absolute;
+        top: 30%;
+        left: 2%;
+    }
+    .nombre:focus ~ label, .nombre:valid ~ label{
+        display: flex;
+        position: absolute;
+        top: 0%;
+        left: 2%;
+        font-size: 12px;
+    }
+    .edad ~ label{
+        display: flex;
+        position: absolute;
+        top: 30%;
+        left: 2%;
+    }
+    .edad:focus ~ label, .edad:valid ~ label{
+        display: flex;
+        position: absolute;
+        top: 0%;
+        left: 2%;
+    }
+    .correo ~ label{
+        display: flex;
+        position: absolute;
+        top: 30%;
+        left: 2%;
+    }
+    .correo:focus ~ label, .correo:valid ~ label{
+        display: flex;
+        position: absolute;
+        top: 0%;
+        left: 2%;
+    }
+    .telef ~ label{
+        display: flex;
+        position: absolute;
+        top: 30%;
+        left: 2%;
+    }
+    .telef:focus ~ label, .telef:valid ~ label{
+        display: flex;
+        position: absolute;
+        top: 0%;
+        left: 2%;
+    }
+    .ciud ~ label{
+        display: flex;
+        position: absolute;
+        top: 30%;
+        left: 2%;
+    }
+    .ciud:focus ~ label, .ciud:valid ~ label{
+        display: flex;
+        position: absolute;
+        top: 0%;
+        left: 2%;
+    }
+}
+@media(max-width: 600px){
+   .nombre ~ label{
+        display: flex;
+        position: absolute;
+        top: 30%;
+        left: 4%;
+    }
+    .nombre:focus ~ label, .nombre:valid ~ label{
+        display: flex;
+        position: absolute;
+        top: 0%;
+        left: 4%;
+    } 
+    .edad ~ label{
+        display: flex;
+        position: absolute;
+        top: 30%;
+        left: 4%;
+    }
+    .edad:focus ~ label, .edad:valid ~ label{
+        display: flex;
+        position: absolute;
+        top: 0%;
+        left: 4%;
+    }
+    .correo ~ label{
+        display: flex;
+        position: absolute;
+        top: 30%;
+        left: 4%;
+    }
+    .correo:focus ~ label, .correo:valid ~ label{
+        display: flex;
+        position: absolute;
+        top: 0%;
+        left: 4%;
+    }
+    .telef ~ label{
+        display: flex;
+        position: absolute;
+        top: 30%;
+        left: 4%;
+    }
+    .telef:focus ~ label, .telef:valid ~ label{
+        display: flex;
+        position: absolute;
+        top: 0%;
+        left: 4%;
+    }
+    .ciud ~ label{
+        display: flex;
+        position: absolute;
+        top: 30%;
+        left: 4%;
+    }
+    .ciud:focus ~ label, .ciud:valid ~ label{
+        display: flex;
+        position: absolute;
+        top: 0%;
+        left: 4%;
+    }
+}
