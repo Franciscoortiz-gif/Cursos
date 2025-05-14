@@ -1,0 +1,89 @@
+.t{
+    color: aliceblue;
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.hea{
+    color: aliceblue;
+    margin-top: 100px;
+    font-size: 36px;
+}
+.thed{
+    font-size: 28px;
+}
+thead,
+tfoot {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+thead th,
+tfoot th,
+tfoot td {
+  background-color: #035bff;
+}
+tbody tr:nth-child(odd) {
+  background-color: #393f49;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #202227;
+}
+
+tbody tr {
+    border-radius: 5px;
+}
+
+table {
+  background-color: #3d3d41;
+}
+.us{
+    text-decoration: none;
+    color: aliceblue;
+    padding-top: 0px;
+    cursor:default;
+    font-size: 20px;
+}
+.kk{
+    display: flex;
+    position: absolute;
+    top: 10%;
+    left: 90%;
+    height: 80px;
+    width: 150px;
+    padding-top: 25px;
+    justify-items: center;
+    justify-content: center;
+    background-color: #0084ff;
+    border-radius: 5px;
+}
+.us:hover{
+    color: aliceblue;
+    cursor:default;
+}
+.ed{
+    width: auto;
+    padding-right: 5px;
+    padding-left: 5px;
+    height: 40px;
+    background-color: #038eff;
+    color: aliceblue;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.ed:hover{
+    color: rgb(238, 238, 238);
+    background-color: #005fad;
+    border: 3px solid rgb(55, 58, 59);
+}
+.ed:active{
+    color: rgb(223, 223, 223);
+    background-color: #004175;
+    border: 3px solid rgb(255, 255, 255);
+    outline: none;
+}
