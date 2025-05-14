@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="module" src="./vendor/js123/manage.js"></script>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Autsol Cursos</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!--
+
+TemplateMo 546 Sixteen Clothing
+
+https://templatemo.com/tm-546-sixteen-clothing
+
+-->
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-sixteen.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="./css/manage.css">
+
+  </head>
+
+  <body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <div class="kk">
+      <a class="us" href="#" id="user">fran</a>
+    </div>
+    <!-- ***** Preloader End ***** -->
+         <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><h2 id="ff">Autsol Cursos<em> Administracion</em></h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="./manageinscriptions.html">Nuevas
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="./TodasLasInscripciones.html">Todas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./missuscp.html">Mis inscripciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="salir">Salir de la sesion</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12" style="text-align: center; margin-bottom: 50px; margin-top: 30px; color: aliceblue;">
+            <h4 class="hea">Solicitudes de inscripcion nuevas</h4>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12" style="text-align: center; height: auto;">
+            <table class="t">
+                <thead>
+                  <th scope="col" class="thed">fecha</th>
+                  <th scope="col" class="thed">Nombre</th>
+                  <th scope="col" class="thed">Correo</th>
+                  <th scope="col" class="thed">Telefono</th>
+                  <th scope="col" class="thed">Curso de interes</th>
+                  <th scope="col" class="thed">Vendedor</th>
+                </thead>
+                <tbody id="tabla">
+
+                </tbody>
+            </table>
+        </div>
+        
+      </div>
+    </div>
+
+    
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="inner-content">
+            <a rel="nofollow noopener" href="https://autsol.mx/" target="_blank"><p>Autsol SA de SV &copy;</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script>
+      const url = "https://iyjcwqzzjdklbkqcuyjm.supabase.co";
+      const key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml5amN3cXp6amRrbGJrcWN1eWptIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0NzE4Nzc5NCwiZXhwIjoyMDYyNzYzNzk0fQ.c2mbzJ9HnHkvIqcMlyHGazDTHc-jDd4Vs4KeJRN7bm8";
+
+      
+      const { createClient } = supabase
+      const __supabase = createClient(url,key);
+      async function edit(id){
+        let use = localStorage.getItem("user");
+        let ven = JSON.parse(use);
+        let vender = ven.usuario;
+        const { data, error } = await __supabase
+          .from('cursos')
+          .update({ vendedor: vender, asignado: true })
+          .eq('id', id)
+          .select();
+      }
+    </script>
+    
+    <!-- Bootstrap core JavaScript -->
+    
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/isotope.js"></script>
+    <script src="assets/js/accordions.js"></script>
+
+
+    <script language = "text/Javascript"> 
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+    </script>
+
+
+  </body>
+
+</html>

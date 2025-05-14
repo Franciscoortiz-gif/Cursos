@@ -1,0 +1,226 @@
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+  input[type=number] { -moz-appearance:textfield; }
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #424242 inset;
+}
+input:-webkit-autofill {
+  -webkit-text-fill-color: #ffffff;
+}
+
+
+.frm{
+    width: 100%;
+    margin-top: 200px;
+}
+.hea{
+    color: aliceblue;
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+.username{
+    width: 100%;
+    height: 50px;
+    font-size: 26px;
+    background-color: rgba(240, 248, 255, 0.144);
+    outline: none;
+    border: transparent;
+    color: aliceblue;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    transition: all 350ms;
+}
+.username:hover{
+    background-color: rgba(240, 248, 255, 0.24);
+    border-bottom: 2px solid rgb(119, 187, 233);
+}
+.username:focus, .username:valid{
+    background-color: rgba(240, 248, 255, 0.116);
+    border-bottom: 2px solid rgb(0, 132, 255);
+}
+.username ~ label{
+    display: flex;
+    position: absolute;
+    top: 18%;
+    left: 3%;
+    color: aliceblue;
+    transition: all 350ms;
+}
+.username:focus ~ label, .username:valid ~ label{
+    display: flex;
+    position: absolute;
+    top: -10%;
+    left: 2%;
+    color: aliceblue;
+    font-size: 12px;
+}
+.passw{
+    width: 95%;
+    height: 50px;
+    font-size: 26px;
+    background-color: rgba(240, 248, 255, 0.144);
+    outline: none;
+    border: transparent;
+    color: aliceblue;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    transition: all 350ms;
+}
+.passw:hover{
+    background-color: rgba(240, 248, 255, 0.24);
+    border-bottom: 2px solid rgb(119, 187, 233);
+}
+.passw:focus, .passw:valid{
+    background-color: rgba(240, 248, 255, 0.116);
+    border-bottom: 2px solid rgb(0, 132, 255);
+}
+.passw ~ label{
+    display: flex;
+    position: absolute;
+    top: 18%;
+    left: 3%;
+    color: aliceblue;
+    transition: all 350ms;
+}
+.passw:focus ~ label, .passw:valid ~ label{
+    display: flex;
+    position: absolute;
+    top: -10%;
+    left: 2%;
+    color: aliceblue;
+    font-size: 12px;
+}
+.showpass{
+    width: 5%;
+    height: 50px;
+    background-color: rgb(0, 132, 255);
+    text-align: center;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    outline: none;
+    transition: all 350ms;
+}
+.showpass:hover{
+    background-color: rgb(9, 107, 199);
+}
+
+.btnsesion{
+    text-align: center;
+    width: 40%;
+    height: 50px;
+    color: aliceblue;
+    background-color: rgb(0, 132, 255);
+    border-radius: 5px;
+    transition: all 350ms;
+}
+.btnsesion:hover{
+    color: rgb(194, 194, 194);
+    background-color: rgb(9, 95, 177);
+    border: 2px solid aliceblue;
+}
+.btnsesion:active{
+    color: rgb(168, 168, 168);
+    background-color: rgb(9, 54, 177);
+    border: 2px solid rgb(210, 218, 224);
+}   
+
+@media(min-width: 1201px){
+    .username ~ label{
+        display: flex;
+        position: absolute;
+        top: 18%;
+        left: 3%;
+        color: aliceblue;
+        transition: all 350ms;
+    }
+    .username:focus ~ label, .username:valid ~ label{
+        display: flex;
+        position: absolute;
+        top: -10%;
+        left: 2%;
+        color: aliceblue;
+        font-size: 12px;
+    }
+    .passw{
+        width: 95%;
+        height: 50px;
+        font-size: 26px;
+        background-color: rgba(240, 248, 255, 0.144);
+        outline: none;
+        border: transparent;
+        color: aliceblue;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        transition: all 350ms;
+    }
+    .hea{
+        color: aliceblue;
+        font-size: 48px;
+        margin-bottom: 50px;
+    }
+        
+}
+@media(max-width: 1200px){
+    .username ~ label{
+        display: flex;
+        position: absolute;
+        top: 18%;
+        left: 5%;
+    }
+    .username:focus ~ label, .username:valid ~ label{
+        display: flex;
+        position: absolute;
+        top: -10%;
+        left: 4%;
+        color: aliceblue;
+        font-size: 12px;
+    }
+    .passw{
+        width: 85%;
+        height: 50px;
+        font-size: 26px;
+        background-color: rgba(240, 248, 255, 0.144);
+        outline: none;
+        border: transparent;
+        color: aliceblue;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        transition: all 350ms;
+    }
+    .passw ~ label{
+        display: flex;
+        position: absolute;
+        top: 18%;
+        left: 5%;
+        color: aliceblue;
+        transition: all 350ms;
+    }
+    .passw:focus ~ label, .passw:valid ~ label{
+        display: flex;
+        position: absolute;
+        top: -10%;
+        left: 4%;
+        color: aliceblue;
+        font-size: 12px;
+    }
+    .showpass{
+        width: 15%;
+        height: 50px;
+        background-color: rgb(0, 132, 255);
+        text-align: center;
+        padding-bottom: 5px;
+        border-radius: 5px;
+        outline: none;
+        transition: all 350ms;
+    }
+    .hea{
+        color: aliceblue;
+        font-size: 48px;
+        margin-bottom: 0px;
+    }
+}
